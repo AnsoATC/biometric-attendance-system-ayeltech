@@ -1,5 +1,5 @@
 <?php
-/* Database connection settings */
+/* Database connection setting */
 	
     $servername = "mysql-ansoatc.alwaysdata.net";
     $username = "ansoatc";		//put your phpmyadmin username.(default is "root")
