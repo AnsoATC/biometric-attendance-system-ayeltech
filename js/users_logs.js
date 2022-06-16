@@ -9,6 +9,20 @@ $.ajax({
     $('#usersLogsData').html(data);
 });
 
+$(document).ready(function () {
+    setInterval(function () {
+        $.ajax({
+            url: "partials/users_logs_data.php",
+            type: 'POST',
+            data: {
+                'select_date': 0,
+            }
+        }).done(function (data) {
+            $('#usersLogsData').html(data);
+        });
+    }, 3000);
+});
+
 $('.filterModal').on('show.bs.modal', function (event) {
     var button = $(event.relatedTarget)
     var modal = $(this)

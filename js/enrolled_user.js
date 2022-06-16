@@ -5,11 +5,15 @@ $(document).ready(function () {
     $('#firstToast').toast('show');
 });
 
-$.ajax({
-    url: "partials/enrolled_users_data.php"
-}).done(function (data) {
-    $(".spinner-border").addClass("d-none");
-    $('#enrolledUsersData').html(data);
+$(document).ready(function () {
+    setInterval(function () {
+        $.ajax({
+            url: "partials/enrolled_users_data.php"
+        }).done(function (data) {
+            $(".spinner-border").addClass("d-none");
+            $('#enrolledUsersData').html(data);
+        });
+    }, 3000);
 });
 
 $("#firstToast").addClass("active");
