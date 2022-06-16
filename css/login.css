@@ -1,0 +1,30 @@
+.bg-login-image {
+  background: url("../images/login_image.jpg") !important;
+  background-position: center;
+  background-size: cover;
+}
+
+.slideInRight {
+  animation-name: slideInRight;
+} 
+.slideInDown {
+  animation-name: slideInDown;
+}
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.form .alert1 {
+  display: none;
+  width: 100%;
+  text-align: center;
+}
+
+#reset{
+  display: none;
+}
+
+.form .reset-form {
+  display: none;
+}
